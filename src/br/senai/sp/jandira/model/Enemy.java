@@ -1,4 +1,4 @@
-package br.senai.sp.jandira;
+package br.senai.sp.jandira.model;
 
 public class Enemy {
 
@@ -13,6 +13,14 @@ public class Enemy {
     }
     public int getLife(){
         return life;
+    }
+
+    public void SubtraiVida(int danoPlayer){
+        life -= danoPlayer;
+        if(life<0){
+            life=0;
+        }
+
     }
 
 }

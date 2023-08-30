@@ -1,8 +1,5 @@
 package br.senai.sp.jandira.model;
 
-import br.senai.sp.jandira.Enemy;
-import br.senai.sp.jandira.Player;
-
 public class Output {
 
     public void PrintPlayer(Player player1) {

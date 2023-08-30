@@ -1,4 +1,4 @@
-package br.senai.sp.jandira;
+package br.senai.sp.jandira.model;
 
 public class Player {
     public String nome;
@@ -12,5 +12,11 @@ public class Player {
         return life;
     }
 
+    public void SubtraiVida(int danoEnemy) {
+        life -= danoEnemy;
+        if (life < 0) {
+            life = 0;
+        }
+    }
 
     }
